@@ -118,8 +118,8 @@ getSummaryData().then((response) => {
    		top_5_2 = response.summary_by_user[user_keys[i]].top_five_tags
    		for (var j = 0 ; j < top_5_2.length;j++){
    			var li = document.createElement("li");
-   			li.append(`${top_5[j].name  }: `)
-   			li.append(` ${top_5[j].count } `)
+   			li.append(`${top_5_2[j].name  }: `)
+   			li.append(` ${top_5_2[j].count } `)
    			ulist.append(li);
    	}
    		tasks_top_5_data.append(ulist)
